@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Вход</title>
+
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/pages/login.css" />
+  </head>
+  <body>
+    <!-- Шапка сайта -->
+    <header>
+      <div class="container">
+        <div class="header__logo-container">
+          <img class="header__logo" src="./assets/images/logo.jpg" alt="logo" />
+        </div>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="./search.html">Поиск</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="./login.html">Войти</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="./profile.html"
+                >Личный кабинет</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="./search.html#liked"
+                >Избранное</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="./orders-menagement.html"
+                >Бронирования</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="">Мои заказы</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="tel:8800777557"
+                >8-800-777-55-77</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="">Уведомления</a>
+            </li>
+            <li class="header__nav-item">
+              <button class="header__ask-btn btn">Задать вопрос</button>
+            </li>
+          </ul>
+          <button class="header__burger-menu">
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <aside class="sidebar">
+      <nav class="aside__nav">
+        <ul class="aside__nav-list">
+          <li class="aside__nav-item">
+            <a class="aside__nav-link" href="./search.html">Поиск</a>
+          </li>
+          <li class="aside__nav-item">
+            <a class="aside__nav-link" href="./login.html">Войти</a>
+          </li>
+          <li class="aside__nav-item">
+            <a class="aside__nav-link" href="./profile.html">Личный кабинет</a>
+          </li>
+          <li class="aside__nav-item">
+            <a class="aside__nav-link" href="./search.html#liked">Избранное</a>
+          </li>
+          <li class="aside__nav-item">
+            <a class="aside__nav-link" href="./orders-menagement.html"
+              >Бронирования</a
+            >
+          </li>
+          <li class="aside__nav-item">
+            <a class="aside__nav-link" href="">Мои заказы</a>
+          </li>
+          <li class="aside__nav-item">
+            <a class="aside__nav-link" href="tel:8800777557">8-800-777-55-77</a>
+          </li>
+          <li class="aside__nav-item">
+            <a class="aside__nav-link" href="">Уведомления</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Контент страницы -->
+    <main>
+      <div class="container">
+        <form class="form" method="post" action="login.php" id="login">
+          <h1>Вход</h1>
+          <div class="form__inputBx">
+            <label for="email">Email</label>
+            <input
+              id="email"
+              name="email"
+              class="input"
+              type="email"
+              placeholder="info@example.com"
+              required
+            />
+            <div class="form__error">Поле обязательно</div>
+          </div>
+          <div class="form__inputBx">
+            <label for="password">Пароль</label>
+            <input
+              id="password"
+              name="password"
+              class="input"
+              type="password"
+              placeholder="password!123"
+              required
+            />
+            <div class="form__error">Поле обязательно</div>
+          </div>
+          <button class="btn">Войти</button>
+          <p>Забыли пароль? <a href="recovery.php">Восстановить</a></p>
+        </form>
+      </div>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer>
+      <div class="container">
+        <div class="footer__logo-container">
+          <img class="footer__logo" src="./assets/images/logo.jpg" alt="logo" />
+        </div>
+
+        <div class="footer__content">
+          <nav class="footer__nav">
+            <h3>Навигация</h3>
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="./index.html">Главная</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="./register.html"
+                  >Регистрация</a
+                >
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="./login.html">Авторизация</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="./profile.html"
+                  >Личный кабинет</a
+                >
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="./search.html">Поиск</a>
+              </li>
+              <li class="footer__nav-item">
+                <button class="footer__ask-btn btn">Задать вопрос</button>
+              </li>
+            </ul>
+          </nav>
+
+          <div id="menu" class="footer__menu">
+            <h3>Меню</h3>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="./clients.html">Клиентам</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="./partners.html"
+                  >Партнерам</a
+                >
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="./about.html">О нас</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="./index.html#contact"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div id="contact" class="footer__contact">
+            <h3>Контакты</h3>
+            <ul class="footer__contact-list">
+              <li class="footer__contact-item">
+                <p>
+                  Телефон:
+                  <a class="footer__contact-link" href="tel:8800777557">
+                    8-800-777-55-77</a
+                  >
+                </p>
+              </li>
+              <li class="footer__contact-item">
+                <p>
+                  Email:
+                  <a class="footer__contact-link" href="mailto:hotel@hotel.ru"
+                    >hotel@hotel.ru</a
+                  >
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/global.js"></script>
+  </body>
+</html>

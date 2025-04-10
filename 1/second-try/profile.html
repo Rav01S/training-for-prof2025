@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Личный кабинет</title>
+
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/sidebar.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/pages/profile.css" />
+  </head>
+  <body>
+    <!-- Шапка сайта -->
+    <header>
+      <div class="container">
+        <div class="header__logo">
+          <img
+            src="./assets/images/logo.jpg"
+            alt="logo"
+            class="header__logo-img"
+          />
+        </div>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Поиск</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Войти</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Личный кабинет</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Избранное</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Бронирования</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Мои заказы</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Уведомления</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="tel:88007775577" class="header__nav-link"
+                >8-800-777-55-77</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="btn">Задать вопрос</a>
+            </li>
+          </ul>
+          <button
+            aria-label="header burgermenu"
+            type="button"
+            class="header__burger"
+          >
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Боковое меню сайта -->
+    <aside class="sidebar">
+      <nav class="sidebar__nav">
+        <h2 class="sidebar__title">Навигация</h2>
+        <ul class="sidebar__nav-list">
+          <li class="sidebar__nav-item">
+            <a href="#" class="sidebar__nav-link">Поиск</a>
+          </li>
+          <li class="sidebar__nav-item">
+            <a href="#" class="sidebar__nav-link">Войти</a>
+          </li>
+          <li class="sidebar__nav-item">
+            <a href="#" class="sidebar__nav-link">Личный кабинет</a>
+          </li>
+          <li class="sidebar__nav-item">
+            <a href="#" class="sidebar__nav-link">Избранное</a>
+          </li>
+          <li class="sidebar__nav-item">
+            <a href="#" class="sidebar__nav-link">Бронирования</a>
+          </li>
+          <li class="sidebar__nav-item">
+            <a href="#" class="sidebar__nav-link">Мои заказы</a>
+          </li>
+          <li class="sidebar__nav-item">
+            <a href="#" class="sidebar__nav-link">Уведомления</a>
+          </li>
+          <li class="sidebar__nav-item">
+            <a href="tel:88007775577" class="sidebar__nav-link"
+              >8-800-777-55-77</a
+            >
+          </li>
+          <li class="sidebar__nav-item">
+            <a href="#" class="btn">Задать вопрос</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Контент страницы -->
+    <main>
+      <div class="container">
+        <!-- Общая информация -->
+        <section id="user">
+          <h1 class="user__title">Общая информация</h1>
+          <div class="user__info">
+            <p>ФИО пользователя: Иванов Иван Иванович, <a href="change.php">Изменить</a></p>
+            <p>Паспортные данные: 1234 *****, <a href="change.php">Изменить</a></p>
+            <p>Номер: 88005553555, <a href="change.php">Изменить</a></p>
+            <p>Email: info@email.com, <a href="change.php">Изменить</a></p>
+            <p>Количество избранных отелей: 7</p>
+            <p>Количество забронированных отелей: 2</p>
+          </div>
+        </section>
+
+        <!-- Подтвержденные бронирования -->
+        <section id="confirmed">
+          <h2>Подтверждённые бронирования</h2>
+          <div class="confirmed__container">
+            <div class="confirmed__item">
+              <img src="./assets/images/2.jpg" alt="hotel 1" class="confirmed__item-img"/>
+              <div class="confirmed__item-info">
+                <h3 class="confirmed__item-title">Отель 1</h3>
+                <p>Россия, г. Оренбург</p>
+                <p>Даты заезда/отъезда: 01.02.2024/03.02.2024</p>
+                <p>Комментарий: Хочу жить на верхнем этаже</p>
+                <div>
+                  <button class="confirmed__item-btn btn btn_danger">Удалить</button>
+                  <button class="confirmed__item-btn btn">Редактировать</button>
+                </div>
+              </div>
+            </div>
+            <div class="confirmed__item">
+              <img src="./assets/images/2.jpg" alt="hotel 1" class="confirmed__item-img"/>
+              <div class="confirmed__item-info">
+                <h3 class="confirmed__item-title">Отель 1</h3>
+                <p>Россия, г. Оренбург</p>
+                <p>Даты заезда/отъезда: 01.02.2024/03.02.2024</p>
+                <p>Комментарий: Хочу жить на верхнем этаже</p>
+                <div>
+                  <button class="confirmed__item-btn btn btn_danger">Удалить</button>
+                  <button class="confirmed__item-btn btn">Редактировать</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Не подтверженные бронирования -->
+        <section id="not-confirmed">
+          <h2>Не подтверженные бронирования</h2>
+          <div class="not-confirmed__container">
+            <div class="not-confirmed__item">
+              <img src="./assets/images/2.jpg" alt="hotel 1" class="not-confirmed__item-img"/>
+              <div class="not-confirmed__item-info">
+                <h3 class="not-confirmed__item-title">Отель 1</h3>
+                <p>Россия, г. Оренбург</p>
+                <p>Даты заезда/отъезда: 01.02.2024/03.02.2024</p>
+                <p>Комментарий: Хочу жить на верхнем этаже</p>
+                <p>Можно отменить бесплатно до 01.02.2024</p>
+                <div>
+                  <button class="not-confirmed__item-btn btn btn_danger">Удалить</button>
+                  <button class="not-confirmed__item-btn btn">Редактировать</button>
+                </div>
+              </div>
+            </div>
+            <div class="not-confirmed__item">
+              <img src="./assets/images/2.jpg" alt="hotel 1" class="not-confirmed__item-img"/>
+              <div class="not-confirmed__item-info">
+                <h3 class="not-confirmed__item-title">Отель 1</h3>
+                <p>Россия, г. Оренбург</p>
+                <p>Даты заезда/отъезда: 01.02.2024/03.02.2024</p>
+                <p>Комментарий: Хочу жить на верхнем этаже</p>
+                <p>Можно отменить бесплатно до 01.02.2024</p>
+                <div>
+                  <button class="not-confirmed__item-btn btn btn_danger">Удалить</button>
+                  <button class="not-confirmed__item-btn btn">Редактировать</button>
+                </div>
+              </div>
+            </div>
+            <div class="not-confirmed__item">
+              <img src="./assets/images/2.jpg" alt="hotel 1" class="not-confirmed__item-img"/>
+              <div class="not-confirmed__item-info">
+                <h3 class="not-confirmed__item-title">Отель 1</h3>
+                <p>Россия, г. Оренбург</p>
+                <p>Даты заезда/отъезда: 01.02.2024/03.02.2024</p>
+                <p>Комментарий: Хочу жить на верхнем этаже</p>
+                <p>Можно отменить бесплатно до 01.02.2024</p>
+                <div>
+                  <button class="not-confirmed__item-btn btn btn_danger">Удалить</button>
+                  <button class="not-confirmed__item-btn btn">Редактировать</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer>
+      <div class="container">
+        <div class="footer__logo">
+          <img
+            src="./assets/images/logo.jpg"
+            alt="logo"
+            class="footer__logo-img"
+          />
+        </div>
+        <div class="footer__content">
+          <nav class="footer__nav">
+            <h3>Навигация</h3>
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Главная</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Регистрация</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Авторизация</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Личный кабинет</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Поиск</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="btn">Задать вопрос</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__menu">
+            <h3>Меню</h3>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Клиентам</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Партнерам</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">О нас</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div id="contact" class="footer__contact">
+            <h3>Контакты</h3>
+            <ul class="footer__contact-list">
+              <li class="footer__contact-item">
+                <p>
+                  Телефон:
+                  <a href="tel:88007775577" class="footer__contact-link">
+                    8-800-777-55-77</a
+                  >
+                </p>
+              </li>
+              <li class="footer__contact-item">
+                <p>
+                  Email:
+                  <a href="#" class="footer__contact-link">hotel@hotel.ru</a>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/global.js"></script>
+  </body>
+</html>

@@ -1,0 +1,83 @@
+.user__info {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+
+
+.confirmed__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+  gap: 30px;
+  width: 100%;
+}
+
+.confirmed__item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+
+.confirmed__item::after {
+  content: "Подтверждено";
+  background-color: lime;
+  color: #fff;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.confirmed__item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.confirmed__item-img {
+  width: 100%;
+  height: min(200px, 70vh);
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.not-confirmed__container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
+  gap: 30px;
+  width: 100%;
+}
+
+.not-confirmed__item {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  position: relative;
+}
+
+.not-confirmed__item::after {
+  content: "Не подтверждено";
+  background-color: red;
+  color: #fff;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.not-confirmed__item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.not-confirmed__item-img {
+  width: 100%;
+  height: min(200px, 70vh);
+  object-fit: cover;
+  border-radius: 10px;
+}

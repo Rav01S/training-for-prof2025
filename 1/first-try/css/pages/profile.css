@@ -1,0 +1,59 @@
+/* Файл css для личного кабинета */
+
+.user-info__container {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 20px;
+}
+
+#user-orders > * {
+  margin-bottom: 30px;
+}
+
+.orders-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr));
+  gap: 30px;
+}
+
+.user-orders__item {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+.user-orders__item-img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.user-orders__confirmed-container .user-orders__item::after {
+  content: 'Подтверждено';
+  background-color: lime;
+  color: var(--text-color);
+  height: 20px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+.user-orders__not-confirmed-container .user-orders__item::after {
+  content: 'Не подтверждено';
+  background-color: red;
+  color: #fff;
+  height: 20px;
+  border-radius: 5px;
+  padding: 10px 20px;
+  position: absolute;
+  top: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+}

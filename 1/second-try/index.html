@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Главная</title>
+
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/sidebar.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/pages/index.css" />
+  </head>
+  <body>
+    <!-- Шапка сайта -->
+    <header>
+      <div class="container">
+        <div class="header__logo">
+          <img
+            src="./assets/images/logo.jpg"
+            alt="logo"
+            class="header__logo-img"
+          />
+        </div>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Поиск</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Войти</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Личный кабинет</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Избранное</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Бронирования</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Мои заказы</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Уведомления</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="tel:88007775577" class="header__nav-link"
+                >8-800-777-55-77</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="btn">Задать вопрос</a>
+            </li>
+          </ul>
+          <button
+            aria-label="header burgermenu"
+            type="button"
+            class="header__burger"
+          >
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Боковое меню сайта -->
+    <aside class="sidebar">
+      <nav class="sidebar__nav">
+        <h2 class="sidebar__title">Навигация</h2>
+        <ul class="sidebar__nav-list">
+          <li class="sidebar__nav-item">
+            <a href="#" class="sidebar__nav-link">Поиск</a>
+          </li>
+          <li class="sidebar__nav-item">
+            <a href="#" class="sidebar__nav-link">Войти</a>
+          </li>
+          <li class="sidebar__nav-item">
+            <a href="#" class="sidebar__nav-link">Личный кабинет</a>
+          </li>
+          <li class="sidebar__nav-item">
+            <a href="#" class="sidebar__nav-link">Избранное</a>
+          </li>
+          <li class="sidebar__nav-item">
+            <a href="#" class="sidebar__nav-link">Бронирования</a>
+          </li>
+          <li class="sidebar__nav-item">
+            <a href="#" class="sidebar__nav-link">Мои заказы</a>
+          </li>
+          <li class="sidebar__nav-item">
+            <a href="#" class="sidebar__nav-link">Уведомления</a>
+          </li>
+          <li class="sidebar__nav-item">
+            <a href="tel:88007775577" class="sidebar__nav-link"
+              >8-800-777-55-77</a
+            >
+          </li>
+          <li class="sidebar__nav-item">
+            <a href="#" class="btn">Задать вопрос</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Контент страницы -->
+    <main>
+      <div class="container">
+        <!-- Топ 10 отелей -->
+        <section id="top10">
+          <h1>Топ 10 отелей по России</h1>
+          <div class="slider">
+            <div class="slider__wrapper">
+              <div class="slider__slide">
+                <img
+                  src="./assets/images/1.webp"
+                  alt="hotel 1"
+                  class="slider__slide-img"
+                />
+                <div class="slider__slide-info">
+                  <h3 class="slider__slide-title">Отель 1</h3>
+                  <p class="slider__slide-extra">Россия, г. Оренбург</p>
+                  <p class="slider__slide-about">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Officia dolor, repudiandae
+                  </p>
+                  <a href="#" class="btn slider__slide-btn">Подробнее</a>
+                </div>
+              </div>
+            </div>
+            <div class="slider__controls">
+              <div class="slider__left-arrow"></div>
+              <div class="slider__right-arrow"></div>
+            </div>
+            <div class="slider__pagination">
+              <span class="slider__pagination-dote active"></span>
+              <span class="slider__pagination-dote"></span>
+              <span class="slider__pagination-dote"></span>
+              <span class="slider__pagination-dote"></span>
+              <span class="slider__pagination-dote"></span>
+              <span class="slider__pagination-dote"></span>
+              <span class="slider__pagination-dote"></span>
+              <span class="slider__pagination-dote"></span>
+              <span class="slider__pagination-dote"></span>
+              <span class="slider__pagination-dote"></span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Быстрый поиск -->
+        <section id="fast-search">
+          <h2>Быстрый поиск</h2>
+          <form
+            method="GET"
+            action="./search.html"
+            class="fast-search__container"
+          >
+            <div class="form__inputBx">
+              <label for="fast-search__name">Название отеля</label>
+              <div class="fast-search__input-container">
+                <input
+                  id="fast-search__name"
+                  name="name"
+                  type="search"
+                  list="fast-search__datalist"
+                  placeholder="Отель ..."
+                  required
+                />
+                <button class="btn">Поиск</button>
+              </div>
+              <p class="form__error">Введите корректное название</p>
+              <datalist id="fast-search__datalist">
+                <option value="Отель 1"></option>
+                <option value="Отель 2"></option>
+                <option value="Отель 3"></option>
+              </datalist>
+            </div>
+          </form>
+        </section>
+
+        <!-- Факты о компании -->
+        <section id="facts">
+          <h2 class="facts__title">Факты о компании</h2>
+          <div class="facts__container">
+            <div class="facts__fact">
+              <p class="facts__fact-img">💵</p>
+              <p class="facts__fact-info">Низкие цены</p>
+            </div>
+            <div class="facts__fact">
+              <p class="facts__fact-img">🏩</p>
+              <p class="facts__fact-info">Отели по всей стране</p>
+            </div>
+            <div class="facts__fact">
+              <p class="facts__fact-img">🎧</p>
+              <p class="facts__fact-info">Заботливая поддержка 24/7</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Популярные отели -->
+        <section id="popular">
+          <h2>Популярные отели</h2>
+          <div class="popular__container">
+            <div class="popular__item">
+              <img
+                class="popular__item-img"
+                src="./assets/images/1.webp"
+                alt="hotel 1"
+              />
+              <div class="popular__item-info">
+                <h3 class="popular__item-title">Отель 1</h3>
+                <p class="popular__item-extra">
+                  Россия, г. Оренбург, ул. Проспектная, д. 10
+                </p>
+                <p class="popular__item-price">От 5000₽</p>
+                <button class="popular__item-btn btn">Подробнее</button>
+              </div>
+            </div>
+            <div class="popular__item">
+              <img
+                class="popular__item-img"
+                src="./assets/images/2.jpg"
+                alt="hotel 1"
+              />
+              <div class="popular__item-info">
+                <h3 class="popular__item-title">Отель 1</h3>
+                <p class="popular__item-extra">
+                  Россия, г. Оренбург, ул. Проспектная, д. 10
+                </p>
+                <p class="popular__item-price">От 5000₽</p>
+                <button class="popular__item-btn btn">Подробнее</button>
+              </div>
+            </div>
+            <div class="popular__item">
+              <img
+                class="popular__item-img"
+                src="./assets/images/3.jpg"
+                alt="hotel 1"
+              />
+              <div class="popular__item-info">
+                <h3 class="popular__item-title">Отель 1</h3>
+                <p class="popular__item-extra">
+                  Россия, г. Оренбург, ул. Проспектная, д. 10
+                </p>
+                <p class="popular__item-price">От 5000₽</p>
+                <button class="popular__item-btn btn">Подробнее</button>
+              </div>
+            </div>
+            <div class="popular__item">
+              <img
+                class="popular__item-img"
+                src="./assets/images/1.webp"
+                alt="hotel 1"
+              />
+              <div class="popular__item-info">
+                <h3 class="popular__item-title">Отель 1</h3>
+                <p class="popular__item-extra">
+                  Россия, г. Оренбург, ул. Проспектная, д. 10
+                </p>
+                <p class="popular__item-price">От 5000₽</p>
+                <button class="popular__item-btn btn">Подробнее</button>
+              </div>
+            </div>
+            <div class="popular__item">
+              <img
+                class="popular__item-img"
+                src="./assets/images/2.jpg"
+                alt="hotel 1"
+              />
+              <div class="popular__item-info">
+                <h3 class="popular__item-title">Отель 1</h3>
+                <p class="popular__item-extra">
+                  Россия, г. Оренбург, ул. Проспектная, д. 10
+                </p>
+                <p class="popular__item-price">От 5000₽</p>
+                <button class="popular__item-btn btn">Подробнее</button>
+              </div>
+            </div>
+            <div class="popular__item">
+              <img
+                class="popular__item-img"
+                src="./assets/images/3.jpg"
+                alt="hotel 1"
+              />
+              <div class="popular__item-info">
+                <h3 class="popular__item-title">Отель 1</h3>
+                <p class="popular__item-extra">
+                  Россия, г. Оренбург, ул. Проспектная, д. 10
+                </p>
+                <p class="popular__item-price">От 5000₽</p>
+                <button class="popular__item-btn btn">Подробнее</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Форма поиска -->
+        <section id="search">
+          <form method="GET" action="./search.html" class="form">
+            <h2>Поиск</h2>
+            <div class="form__inputBx">
+              <label for="side">Направление/город, страна</label>
+              <input
+                id="side"
+                name="side"
+                placeholder="Направление/город, страна"
+                type="text"
+                required
+              />
+              <p class="form__error">Введите корректные данные</p>
+            </div>
+            <div class="form__inputBx">
+              <label for="date">Дата заезда</label>
+              <input
+                id="date"
+                name="date"
+                placeholder="Дата заезда"
+                type="date"
+                required
+              />
+              <p class="form__error">Введите корректные данные</p>
+            </div>
+            <div class="form__inputBx">
+              <label for="date">Дата отъезда</label>
+              <input
+                id="date-back"
+                name="date"
+                placeholder="Дата отъезда"
+                type="date"
+                required
+              />
+              <p class="form__error">Введите корректные данные</p>
+            </div>
+            <div class="form__inputBx">
+              <label for="count">Количество гостей</label>
+              <input
+                id="count"
+                name="count"
+                placeholder="Количество гостей"
+                type="number"
+                required
+              />
+              <p class="form__error">Введите корректные данные</p>
+            </div>
+            <button class="btn">Поиск</button>
+          </form>
+        </section>
+
+        <!-- Форма подписки на новости -->
+        <section id="subscribe">
+          <form method="post" action="subsribe.php" class="form">
+            <h2>Подписаться на новости</h2>
+            <div class="form__inputBx">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                name="email"
+                placeholder="Email"
+                type="email"
+                required
+              />
+              <p class="form__error">Введите корректные данные</p>
+            </div>
+            <div class="form__inputBx">
+              <div>
+                <input id="agree" name="agree" type="checkbox" required />
+                <label for="agree"
+                  >Соглашаюсь на обработку персональных данных</label
+                >
+              </div>
+              <p class="form__error">Введите корректные данные</p>
+            </div>
+            <button class="btn">Поиск</button>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer>
+      <div class="container">
+        <div class="footer__logo">
+          <img
+            src="./assets/images/logo.jpg"
+            alt="logo"
+            class="footer__logo-img"
+          />
+        </div>
+        <div class="footer__content">
+          <nav class="footer__nav">
+            <h3>Навигация</h3>
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Главная</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Регистрация</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Авторизация</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Личный кабинет</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Поиск</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="btn">Задать вопрос</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__menu">
+            <h3>Меню</h3>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Клиентам</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Партнерам</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">О нас</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div id="contact" class="footer__contact">
+            <h3>Контакты</h3>
+            <ul class="footer__contact-list">
+              <li class="footer__contact-item">
+                <p>
+                  Телефон:
+                  <a href="tel:88007775577" class="footer__contact-link">
+                    8-800-777-55-77</a
+                  >
+                </p>
+              </li>
+              <li class="footer__contact-item">
+                <p>
+                  Email:
+                  <a href="#" class="footer__contact-link">hotel@hotel.ru</a>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/global.js"></script>
+  </body>
+</html>

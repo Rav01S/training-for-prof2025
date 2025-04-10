@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Регистрация</title>
+
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/sidebar.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+  </head>
+  <body>
+    <!-- Шапка сайта -->
+    <header>
+      <div class="container">
+        <div class="header__logo">
+          <img
+            src="./assets/images/logo.jpg"
+            alt="logo"
+            class="header__logo-img"
+          />
+        </div>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Поиск</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Войти</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Личный кабинет</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Избранное</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Бронирования</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Мои заказы</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="header__nav-link">Уведомления</a>
+            </li>
+            <li class="header__nav-item">
+              <a href="tel:88007775577" class="header__nav-link"
+                >8-800-777-55-77</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a href="#" class="btn">Задать вопрос</a>
+            </li>
+          </ul>
+          <button
+            aria-label="header burgermenu"
+            type="button"
+            class="header__burger"
+          >
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Боковое меню сайта -->
+    <aside class="sidebar">
+      <nav class="sidebar__nav">
+        <h2 class="sidebar__title">Навигация</h2>
+        <ul class="sidebar__nav-list">
+          <li class="sidebar__nav-item">
+            <a href="#" class="sidebar__nav-link">Поиск</a>
+          </li>
+          <li class="sidebar__nav-item">
+            <a href="#" class="sidebar__nav-link">Войти</a>
+          </li>
+          <li class="sidebar__nav-item">
+            <a href="#" class="sidebar__nav-link">Личный кабинет</a>
+          </li>
+          <li class="sidebar__nav-item">
+            <a href="#" class="sidebar__nav-link">Избранное</a>
+          </li>
+          <li class="sidebar__nav-item">
+            <a href="#" class="sidebar__nav-link">Бронирования</a>
+          </li>
+          <li class="sidebar__nav-item">
+            <a href="#" class="sidebar__nav-link">Мои заказы</a>
+          </li>
+          <li class="sidebar__nav-item">
+            <a href="#" class="sidebar__nav-link">Уведомления</a>
+          </li>
+          <li class="sidebar__nav-item">
+            <a href="tel:88007775577" class="sidebar__nav-link"
+              >8-800-777-55-77</a
+            >
+          </li>
+          <li class="sidebar__nav-item">
+            <a href="#" class="btn">Задать вопрос</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Контент страницы -->
+    <main>
+      <div class="container">
+        <!-- Регистрация -->
+        <section id="register">
+          <form method="post" action="register.php" class="form">
+            <h2>Регистрация</h2>
+
+            <div class="form__inputBx">
+              <label for="email">Email</label>
+              <input
+                id="email"
+                name="email"
+                placeholder="Email"
+                type="email"
+                required
+              />
+              <p class="form__error">Введите корректные данные</p>
+            </div>
+            <div class="form__inputBx">
+              <label for="last_name">Фамилия</label>
+              <input
+                id="last_name"
+                name="last_name"
+                placeholder="Фамилия"
+                type="text"
+                required
+              />
+              <p class="form__error">Введите корректные данные</p>
+            </div>
+            <div class="form__inputBx">
+              <label for="phone">Телефон</label>
+              <input
+                id="phone"
+                name="phone"
+                placeholder="Телефон"
+                type="tel"
+                required
+              />
+              <p class="form__error">Введите корректные данные</p>
+            </div>
+            <div class="form__inputBx">
+              <label for="first_name">Имя</label>
+              <input
+                id="first_name"
+                name="first_name"
+                placeholder="Имя"
+                type="text"
+                required
+              />
+              <p class="form__error">Введите корректные данные</p>
+            </div>
+            <div class="form__inputBx">
+              <label for="password">Пароль</label>
+              <input
+                id="password"
+                name="password"
+                placeholder="Пароль"
+                type="password"
+                required
+              />
+              <p class="form__error">Введите корректные данные</p>
+            </div>
+            <div class="form__inputBx">
+              <label for="password_confirmation">Повтор пароля</label>
+              <input
+                id="password_confirmation"
+                name="password_confirmation"
+                placeholder="Повтор пароля"
+                type="password"
+                required
+              />
+              <p class="form__error">Введите корректные данные</p>
+            </div>
+            <div class="form__inputBx">
+              <div>
+                <input id="agree" name="agree" type="checkbox" required />
+                <label for="agree"
+                  >Соглашаюсь на обработку персональных данных</label
+                >
+              </div>
+              <p class="form__error">Введите корректные данные</p>
+            </div>
+
+            <button class="btn">Зарегистрироваться</button>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer>
+      <div class="container">
+        <div class="footer__logo">
+          <img
+            src="./assets/images/logo.jpg"
+            alt="logo"
+            class="footer__logo-img"
+          />
+        </div>
+        <div class="footer__content">
+          <nav class="footer__nav">
+            <h3>Навигация</h3>
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Главная</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Регистрация</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Авторизация</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Личный кабинет</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="footer__nav-link">Поиск</a>
+              </li>
+              <li class="footer__nav-item">
+                <a href="#" class="btn">Задать вопрос</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="footer__menu">
+            <h3>Меню</h3>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Клиентам</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Партнерам</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">О нас</a>
+              </li>
+              <li class="footer__menu-item">
+                <a href="#" class="footer__menu-link">Контакты</a>
+              </li>
+            </ul>
+          </div>
+          <div id="contact" class="footer__contact">
+            <h3>Контакты</h3>
+            <ul class="footer__contact-list">
+              <li class="footer__contact-item">
+                <p>
+                  Телефон:
+                  <a href="tel:88007775577" class="footer__contact-link">
+                    8-800-777-55-77</a
+                  >
+                </p>
+              </li>
+              <li class="footer__contact-item">
+                <p>
+                  Email:
+                  <a href="#" class="footer__contact-link">hotel@hotel.ru</a>
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/global.js"></script>
+  </body>
+</html>

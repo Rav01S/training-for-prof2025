@@ -1,0 +1,86 @@
+#filters {
+  position: sticky;
+  top: 100px;
+}
+#filters h2 {
+  margin-bottom: 40px;
+}
+
+
+.orders__container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.orders__item {
+  display: flex;
+  gap: 30px;
+  border: 2px solid var(--primary-color);
+  border-radius: 10px;
+  padding: 20px;
+  position: relative;
+}
+
+.orders__item-img {
+  width: 30%;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+.orders__item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.orders__item.accepted::after {
+  content: 'На модерации';
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  background-color: rgb(255, 251, 0);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.orders__item.canceled::after {
+  content: 'Не подтверждено';
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  background-color: var(--danger-color);
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.orders__item.moderation::after {
+  content: 'Подтверждено';
+  position: absolute;
+  left: 30px;
+  top: 30px;
+  background-color: lime;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+@media (max-width: 1200px) {
+  #filters {
+    position: static;
+  }
+
+  .wrapper {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .orders__item {
+    flex-direction: column;
+  }
+
+  .orders__item-img {
+    width: 100%;
+  }
+}

@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Вход</title>
+
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/pages/login.css" />
+  </head>
+  <body>
+    <!-- Шапка сайта -->
+    <header>
+      <div class="container">
+        <div class="header__logo-container">
+          <img class="header__logo" src="./assets/images/logo.jpg" alt="logo" />
+        </div>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="./search.html">Поиск</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="./login.html">Войти</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="./profile.html"
+                >Личный кабинет</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="./search.html#liked"
+                >Избранное</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="./orders-menagement.html"
+                >Бронирования</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="">Мои заказы</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="tel:8800777557"
+                >8-800-777-55-77</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="">Уведомления</a>
+            </li>
+            <li class="header__nav-item">
+              <button class="header__ask-btn btn">Задать вопрос</button>
+            </li>
+          </ul>
+          <button class="header__burger-menu">
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <aside class="sidebar">
+      <nav class="aside__nav">
+        <ul class="aside__nav-list">
+          <li class="aside__nav-item">
+            <a class="aside__nav-link" href="./search.html">Поиск</a>
+          </li>
+          <li class="aside__nav-item">
+            <a class="aside__nav-link" href="./login.html">Войти</a>
+          </li>
+          <li class="aside__nav-item">
+            <a class="aside__nav-link" href="./profile.html">Личный кабинет</a>
+          </li>
+          <li class="aside__nav-item">
+            <a class="aside__nav-link" href="./search.html#liked">Избранное</a>
+          </li>
+          <li class="aside__nav-item">
+            <a class="aside__nav-link" href="./orders-menagement.html"
+              >Бронирования</a
+            >
+          </li>
+          <li class="aside__nav-item">
+            <a class="aside__nav-link" href="">Мои заказы</a>
+          </li>
+          <li class="aside__nav-item">
+            <a class="aside__nav-link" href="tel:8800777557">8-800-777-55-77</a>
+          </li>
+          <li class="aside__nav-item">
+            <a class="aside__nav-link" href="">Уведомления</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Контент страницы -->
+    <main>
+      <div class="container">
+        <form class="form" action="#" method="post">
+          <h1>Добавление отеля</h1>
+    
+          <!-- Контактный номер телефона -->
+          <div class="form__inputBx">
+            <label for="phone">Контактный номер телефона отеля*</label>
+            <input type="tel" id="phone" name="phone" class="input" required pattern="^\+?\d{10,15}$" placeholder="+79991234567">
+            <div class="form__error">Пожалуйста, введите корректный номер телефона.</div>
+          </div>
+    
+          <!-- Email -->
+          <div class="form__inputBx">
+            <label for="email">E-mail отеля*</label>
+            <input type="email" id="email" name="email" class="input" required placeholder="example@hotel.com">
+            <div class="form__error">Введите корректный адрес электронной почты.</div>
+          </div>
+    
+          <!-- Юридические данные -->
+          <div class="form__inputBx">
+            <label for="legal">Юридические данные отеля*</label>
+            <textarea id="legal" name="legal" class="input" rows="3" required placeholder="ИНН, ОГРН, юридический адрес и пр."></textarea>
+            <div class="form__error">Это поле обязательно для заполнения.</div>
+          </div>
+    
+          <!-- Блок паролей -->
+          <div class="form__inputBx">
+            <label for="password">Пароль*</label>
+            <input type="password" id="password" name="password" class="input" required minlength="6" placeholder="Введите пароль">
+            <div class="form__error">Пароль должен содержать минимум 6 символов.</div>
+          </div>
+    
+          <div class="form__inputBx">
+            <label for="confirmPassword">Подтверждение пароля*</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" class="input" required minlength="6" placeholder="Повторите пароль">
+            <div class="form__error">Пароли должны совпадать.</div>
+          </div>
+    
+          <!-- Звездность отеля -->
+          <div class="form__inputBx">
+            <label for="stars">Количество звезд*</label>
+            <select id="stars" name="stars" class="input" required>
+              <option value="">Выберите количество звезд</option>
+              <option value="1">★</option>
+              <option value="2">★★</option>
+              <option value="3">★★★</option>
+              <option value="4">★★★★</option>
+              <option value="5">★★★★★</option>
+            </select>
+            <div class="form__error">Пожалуйста, выберите количество звезд.</div>
+          </div>
+    
+          <!-- Фото -->
+          <div class="form__inputBx">
+            <label for="photos">Фото отеля и номеров (до 3 фото)*</label>
+            <input type="file" id="photos" name="photos[]" class="input" accept="image/*" multiple required placeholder="Загрузите до 3 фото">
+            <div class="form__error">Загрузите не более 3 изображений.</div>
+          </div>
+    
+          <!-- Дополнительная информация -->
+          <div class="form__inputBx">
+            <label for="additional">Дополнительная информация об отеле</label>
+            <textarea id="additional" name="additional" class="input" rows="4" placeholder="Описание, особенности и т.д."></textarea>
+          </div>
+    
+          <!-- Местоположение -->
+          <div class="form__inputBx">
+            <label for="location">Страна, город, район*</label>
+            <input type="text" id="location" name="location" class="input" required placeholder="Россия, Москва, Арбат">
+            <div class="form__error">Пожалуйста, укажите местоположение отеля.</div>
+          </div>
+    
+          <!-- Тип отеля -->
+          <div class="form__inputBx">
+            <label for="type">Тип отеля*</label>
+            <select id="type" name="type" class="input" required>
+              <option value="">Выберите тип отеля</option>
+              <option value="resort">Курорт</option>
+              <option value="hostel">Хостел</option>
+              <option value="business">Бизнес-отель</option>
+              <option value="boutique">Бутик-отель</option>
+              <option value="apartments">Апартаменты</option>
+            </select>
+            <div class="form__error">Пожалуйста, выберите тип отеля.</div>
+          </div>
+    
+          <!-- Удобства -->
+          <div class="form__inputBx">
+            <label>Удобства в отеле:</label>
+            <div class="wrapper">
+              <label><input type="checkbox" name="amenities[]" value="wifi"> Wi-Fi</label>
+              <label><input type="checkbox" name="amenities[]" value="parking"> Парковка</label>
+              <label><input type="checkbox" name="amenities[]" value="pool"> Бассейн</label>
+              <label><input type="checkbox" name="amenities[]" value="gym"> Фитнес-зал</label>
+              <label><input type="checkbox" name="amenities[]" value="spa"> Спа</label>
+            </div>
+          </div>
+    
+          <!-- Согласие на обработку -->
+          <div class="form__inputBx form__inputBx_checkbox">
+            <div>
+              <input type="checkbox" id="consent" name="consent" required>
+              <label for="consent">Я согласен на обработку персональных данных*</label>
+            </div>
+            <div class="form__error">Необходимо согласие на обработку данных.</div>
+          </div>
+    
+          <!-- Кнопка отправки -->
+          <button type="submit" class="btn">Добавить отель</button>
+    
+        </form>
+      </div>
+    </main>
+    
+    
+
+    <!-- Подвал сайта -->
+    <footer>
+      <div class="container">
+        <div class="footer__logo-container">
+          <img class="footer__logo" src="./assets/images/logo.jpg" alt="logo" />
+        </div>
+
+        <div class="footer__content">
+          <nav class="footer__nav">
+            <h3>Навигация</h3>
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="./index.html">Главная</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="./register.html"
+                  >Регистрация</a
+                >
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="./login.html">Авторизация</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="./profile.html"
+                  >Личный кабинет</a
+                >
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="./search.html">Поиск</a>
+              </li>
+              <li class="footer__nav-item">
+                <button class="footer__ask-btn btn">Задать вопрос</button>
+              </li>
+            </ul>
+          </nav>
+
+          <div id="menu" class="footer__menu">
+            <h3>Меню</h3>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="./clients.html">Клиентам</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="./partners.html"
+                  >Партнерам</a
+                >
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="./about.html">О нас</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="./index.html#contact"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div id="contact" class="footer__contact">
+            <h3>Контакты</h3>
+            <ul class="footer__contact-list">
+              <li class="footer__contact-item">
+                <p>
+                  Телефон:
+                  <a class="footer__contact-link" href="tel:8800777557">
+                    8-800-777-55-77</a
+                  >
+                </p>
+              </li>
+              <li class="footer__contact-item">
+                <p>
+                  Email:
+                  <a class="footer__contact-link" href="mailto:hotel@hotel.ru"
+                    >hotel@hotel.ru</a
+                  >
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/global.js"></script>
+  </body>
+</html>

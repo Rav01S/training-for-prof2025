@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Вход</title>
+
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/pages/orders-menagement.css" />
+  </head>
+  <body>
+    <!-- Шапка сайта -->
+    <header>
+      <div class="container">
+        <div class="header__logo-container">
+          <img class="header__logo" src="./assets/images/logo.jpg" alt="logo" />
+        </div>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="./search.html">Поиск</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="./login.html">Войти</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="./profile.html"
+                >Личный кабинет</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="./search.html#liked"
+                >Избранное</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="./orders-menagement.html"
+                >Бронирования</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="">Мои заказы</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="tel:8800777557"
+                >8-800-777-55-77</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="">Уведомления</a>
+            </li>
+            <li class="header__nav-item">
+              <button class="header__ask-btn btn">Задать вопрос</button>
+            </li>
+          </ul>
+          <button class="header__burger-menu">
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <aside class="sidebar">
+      <nav class="aside__nav">
+        <ul class="aside__nav-list">
+          <li class="aside__nav-item">
+            <a class="aside__nav-link" href="./search.html">Поиск</a>
+          </li>
+          <li class="aside__nav-item">
+            <a class="aside__nav-link" href="./login.html">Войти</a>
+          </li>
+          <li class="aside__nav-item">
+            <a class="aside__nav-link" href="./profile.html">Личный кабинет</a>
+          </li>
+          <li class="aside__nav-item">
+            <a class="aside__nav-link" href="./search.html#liked">Избранное</a>
+          </li>
+          <li class="aside__nav-item">
+            <a class="aside__nav-link" href="./orders-menagement.html"
+              >Бронирования</a
+            >
+          </li>
+          <li class="aside__nav-item">
+            <a class="aside__nav-link" href="">Мои заказы</a>
+          </li>
+          <li class="aside__nav-item">
+            <a class="aside__nav-link" href="tel:8800777557">8-800-777-55-77</a>
+          </li>
+          <li class="aside__nav-item">
+            <a class="aside__nav-link" href="">Уведомления</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Контент страницы -->
+    <main>
+      <div class="container">
+        <h1 class="admin__title">Личный кабинет администратора</h1>
+  
+        <!-- Панель фильтрации -->
+        <div class="admin-filters">
+          <select class="admin-filters__select" name="sort-date">
+            <option selected>Сортировать по дате</option>
+            <option value="asc">Сначала новые</option>
+            <option value="desc">Сначала старые</option>
+          </select>
+  
+          <select class="admin-filters__select" name="sort-status">
+            <option selected>Фильтр по статусу</option>
+            <option value="pending">На модерации</option>
+            <option value="approved">Подтверждено</option>
+            <option value="rejected">Не подтверждено</option>
+          </select>
+        </div>
+  
+        <!-- Список броней -->
+        <section class="booking-list">
+          <article class="booking-card">
+            <div class="booking-card__info">
+              <h2 class="booking-card__title">Гранд Отель Москва</h2>
+              <p class="booking-card__field"><strong>Гость:</strong> Иванов И.И.</p>
+              <p class="booking-card__field"><strong>Контакты:</strong> +7 900 123-45-67, ivanov@mail.ru</p>
+              <p class="booking-card__field"><strong>Даты:</strong> 12.04.2025 – 15.04.2025</p>
+              <p class="booking-card__field"><strong>Номер:</strong> Люкс, 2 взрослых</p>
+              <p class="booking-card__field"><strong>Пожелания:</strong> Заселение после 22:00, высокий этаж</p>
+              <p class="booking-card__field"><strong>Стоимость:</strong> 12 600 ₽</p>
+              <p class="booking-card__field"><strong>Текущий статус:</strong> <span class="booking-card__status booking-card__status--pending">На модерации</span></p>
+            </div>
+  
+            <div class="booking-card__actions">
+              <button class="button button--approve">Подтвердить</button>
+              <button class="button button--reject">Отклонить</button>
+            </div>
+          </article>
+  
+          <article class="booking-card">
+            <div class="booking-card__info">
+              <h2 class="booking-card__title">Гранд Отель Москва</h2>
+              <p class="booking-card__field"><strong>Гость:</strong> Иванов И.И.</p>
+              <p class="booking-card__field"><strong>Контакты:</strong> +7 900 123-45-67, ivanov@mail.ru</p>
+              <p class="booking-card__field"><strong>Даты:</strong> 12.04.2025 – 15.04.2025</p>
+              <p class="booking-card__field"><strong>Номер:</strong> Люкс, 2 взрослых</p>
+              <p class="booking-card__field"><strong>Пожелания:</strong> Заселение после 22:00, высокий этаж</p>
+              <p class="booking-card__field"><strong>Стоимость:</strong> 12 600 ₽</p>
+              <p class="booking-card__field"><strong>Текущий статус:</strong> <span class="booking-card__status booking-card__status--pending">На модерации</span></p>
+            </div>
+  
+            <div class="booking-card__actions">
+              <button class="button button--approve">Подтвердить</button>
+              <button class="button button--reject">Отклонить</button>
+            </div>
+          </article>
+
+          <article class="booking-card">
+            <div class="booking-card__info">
+              <h2 class="booking-card__title">Гранд Отель Москва</h2>
+              <p class="booking-card__field"><strong>Гость:</strong> Иванов И.И.</p>
+              <p class="booking-card__field"><strong>Контакты:</strong> +7 900 123-45-67, ivanov@mail.ru</p>
+              <p class="booking-card__field"><strong>Даты:</strong> 12.04.2025 – 15.04.2025</p>
+              <p class="booking-card__field"><strong>Номер:</strong> Люкс, 2 взрослых</p>
+              <p class="booking-card__field"><strong>Пожелания:</strong> Заселение после 22:00, высокий этаж</p>
+              <p class="booking-card__field"><strong>Стоимость:</strong> 12 600 ₽</p>
+              <p class="booking-card__field"><strong>Текущий статус:</strong> <span class="booking-card__status booking-card__status--pending">На модерации</span></p>
+            </div>
+  
+            <div class="booking-card__actions">
+              <button class="button button--approve">Подтвердить</button>
+              <button class="button button--reject">Отклонить</button>
+            </div>
+          </article>
+          <!-- Следующая бронь может идти аналогично -->
+        </section>
+      </div>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer>
+      <div class="container">
+        <div class="footer__logo-container">
+          <img class="footer__logo" src="./assets/images/logo.jpg" alt="logo" />
+        </div>
+
+        <div class="footer__content">
+          <nav class="footer__nav">
+            <h3>Навигация</h3>
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="./index.html">Главная</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="./register.html"
+                  >Регистрация</a
+                >
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="./login.html">Авторизация</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="./profile.html"
+                  >Личный кабинет</a
+                >
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="./search.html">Поиск</a>
+              </li>
+              <li class="footer__nav-item">
+                <button class="footer__ask-btn btn">Задать вопрос</button>
+              </li>
+            </ul>
+          </nav>
+
+          <div id="menu" class="footer__menu">
+            <h3>Меню</h3>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="./clients.html">Клиентам</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="./partners.html"
+                  >Партнерам</a
+                >
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="./about.html">О нас</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="./index.html#contact"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div id="contact" class="footer__contact">
+            <h3>Контакты</h3>
+            <ul class="footer__contact-list">
+              <li class="footer__contact-item">
+                <p>
+                  Телефон:
+                  <a class="footer__contact-link" href="tel:8800777557">
+                    8-800-777-55-77</a
+                  >
+                </p>
+              </li>
+              <li class="footer__contact-item">
+                <p>
+                  Email:
+                  <a class="footer__contact-link" href="mailto:hotel@hotel.ru"
+                    >hotel@hotel.ru</a
+                  >
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/global.js"></script>
+  </body>
+</html>

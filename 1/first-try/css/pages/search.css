@@ -1,0 +1,127 @@
+/* Файл css для страницы поиска */
+
+/* Поисковая форма */
+.search-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-end;
+}
+
+.search-form__group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  min-width: 200px;
+}
+
+.search-form__label {
+  margin-bottom: 5px;
+}
+
+.search-form__input {
+  padding: 10px;
+  border: 2px solid #6b9cff;
+  border-radius: 8px;
+}
+
+/* Фильтры */
+.filters {
+  border: 2px solid #6b9cff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.filters__title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.filters__group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.filters__select,
+.filters__input,
+.filters__range {
+  padding: 10px;
+  border: 2px solid #6b9cff;
+  border-radius: 8px;
+  min-width: 200px;
+}
+
+.filters__checkbox {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Карточки отелей */
+.hotel-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.hotel-card {
+  display: flex;
+  gap: 20px;
+  border: 2px solid #6b9cff;
+  border-radius: 12px;
+  padding: 20px;
+  flex-wrap: wrap;
+}
+
+.hotel-card__image {
+  width: 200px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.hotel-card__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.hotel-card__title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.hotel-card__button {
+  margin-top: 10px;
+}
+
+.hotel-card__amenities {
+  display: flex;
+  gap: 10px;
+  margin-top: 5px;
+}
+
+.icon {
+  font-size: 1.2rem;
+}
+
+/* Пагинация */
+.pagination {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+
+.pagination__button {
+  background-color: #e6ecff;
+  border: 1px solid #6b9cff;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.pagination__button:hover {
+  background-color: #d0ddff;
+}

@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Главная</title>
+
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/pages/index.css" />
+  </head>
+  <body>
+    <!-- Шапка сайта -->
+    <header>
+      <div class="container">
+        <div class="header__logo-container">
+          <img class="header__logo" src="./assets/images/logo.jpg" alt="logo" />
+        </div>
+        <nav class="header__nav">
+          <ul class="header__nav-list">
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="./search.html">Поиск</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="./login.html">Войти</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="./profile.html"
+                >Личный кабинет</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="./search.html#liked"
+                >Избранное</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="./orders-menagement.html"
+                >Бронирования</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="">Мои заказы</a>
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="tel:8800777557"
+                >8-800-777-55-77</a
+              >
+            </li>
+            <li class="header__nav-item">
+              <a class="header__nav-link" href="">Уведомления</a>
+            </li>
+            <li class="header__nav-item">
+              <button class="header__ask-btn btn">Задать вопрос</button>
+            </li>
+          </ul>
+          <button class="header__burger-menu">
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+            <span class="header__burger-line"></span>
+          </button>
+        </nav>
+      </div>
+    </header>
+
+    <aside class="sidebar">
+      <nav class="aside__nav">
+        <ul class="aside__nav-list">
+          <li class="aside__nav-item">
+            <a class="aside__nav-link" href="./search.html">Поиск</a>
+          </li>
+          <li class="aside__nav-item">
+            <a class="aside__nav-link" href="./login.html">Войти</a>
+          </li>
+          <li class="aside__nav-item">
+            <a class="aside__nav-link" href="./profile.html">Личный кабинет</a>
+          </li>
+          <li class="aside__nav-item">
+            <a class="aside__nav-link" href="./search.html#liked">Избранное</a>
+          </li>
+          <li class="aside__nav-item">
+            <a class="aside__nav-link" href="./orders-menagement.html"
+              >Бронирования</a
+            >
+          </li>
+          <li class="aside__nav-item">
+            <a class="aside__nav-link" href="">Мои заказы</a>
+          </li>
+          <li class="aside__nav-item">
+            <a class="aside__nav-link" href="tel:8800777557">8-800-777-55-77</a>
+          </li>
+          <li class="aside__nav-item">
+            <a class="aside__nav-link" href="">Уведомления</a>
+          </li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Контент страницы -->
+    <main>
+      <div class="container">
+        <!-- Топ 10 отелей -->
+        <section id="top10">
+          <h1>Топ 10 отелей</h1>
+          <div class="slider">
+            <div class="slider__wrapper">
+              <div class="slider__slide slide">
+                <img
+                  class="slide__img"
+                  src="./assets/images/1.webp"
+                  alt="hotel 1"
+                />
+                <div class="slide__info">
+                  <h3 class="slide__title">Отель 1</h3>
+                  <p class="slide__extra">Россия, г. Оренбург</p>
+                  <p class="slide__about">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                    Alias voluptatem nobis deleniti eveniet
+                  </p>
+                  <a class="slide__btn btn" href="./result.html">Подробнее</a>
+                </div>
+              </div>
+            </div>
+
+            <div class="slider__controls">
+              <div class="slider__left-arrow"></div>
+              <div class="slider__right-arrow"></div>
+            </div>
+
+            <div class="slider__pagination">
+              <span class="active"></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Быстрый поиск отелей по названию -->
+        <section id="fast-search">
+          <h2>Быстрый поиск</h2>
+          <form class="fast-search__container">
+            <div class="fast-search__inputBx form__inputBx">
+              <input
+                name="search"
+                class="input"
+                list="fast-search-data-list"
+                type="search"
+                placeholder="Отель ..."
+                required
+              />
+              <p class="form__error">Введите название</p>
+              <datalist id="fast-search-data-list">
+                <option value="Отель 1"></option>
+                <option value="Отель 2"></option>
+                <option value="Отель 3"></option>
+              </datalist>
+            </div>
+            <button class="btn">Поиск</button>
+          </form>
+        </section>
+
+        <!-- Факты о компании -->
+        <section id="facts">
+          <h2>Факты о компании</h2>
+          <div class="facts__container">
+            <div class="fact">
+              <div class="fact__img">💵</div>
+              <p class="fact__about">Низкие цены</p>
+            </div>
+            <div class="fact">
+              <div class="fact__img">🏩</div>
+              <p class="fact__about">Отели по всей стране</p>
+            </div>
+            <div class="fact">
+              <div class="fact__img">🎧</div>
+              <p class="fact__about">Заботливая поддержка 24/7</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Популярные отели -->
+        <section id="popular">
+          <h2>Популярные отели</h2>
+          <div class="popular__container">
+            <div class="popular-item">
+              <img
+                class="popular-item__image"
+                src="./assets/images/1.webp"
+                alt="hotel 1"
+              />
+              <div class="popular-item__info">
+                <h3 class="popular-item__title">Отель 1</h3>
+                <p class="popular-item__extra">
+                  8-800-555-3555
+                  <br />
+                  Россия, г. Оренбург, ул. Уличная, д.10
+                  <br />
+                  Начальная стоимость номера: 4000₽
+                  <br />
+                </p>
+                <p class="popular-item__about">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Alias voluptatem nobis deleniti eveniet
+                </p>
+                <a class="popular-item__btn btn" href="./result.html"
+                  >Подробнее</a
+                >
+              </div>
+            </div>
+            <div class="popular-item">
+              <img
+                class="popular-item__image"
+                src="./assets/images/1.webp"
+                alt="hotel 1"
+              />
+              <div class="popular-item__info">
+                <h3 class="popular-item__title">Отель 1</h3>
+                <p class="popular-item__extra">
+                  8-800-555-3555
+                  <br />
+                  Россия, г. Оренбург, ул. Уличная, д.10
+                  <br />
+                  Начальная стоимость номера: 4000₽
+                  <br />
+                </p>
+                <p class="popular-item__about">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Alias voluptatem nobis deleniti eveniet
+                </p>
+                <a class="popular-item__btn btn" href="./result.html"
+                  >Подробнее</a
+                >
+              </div>
+            </div>
+            <div class="popular-item">
+              <img
+                class="popular-item__image"
+                src="./assets/images/1.webp"
+                alt="hotel 1"
+              />
+              <div class="popular-item__info">
+                <h3 class="popular-item__title">Отель 1</h3>
+                <p class="popular-item__extra">
+                  8-800-555-3555
+                  <br />
+                  Россия, г. Оренбург, ул. Уличная, д.10
+                  <br />
+                  Начальная стоимость номера: 4000₽
+                  <br />
+                </p>
+                <p class="popular-item__about">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Alias voluptatem nobis deleniti eveniet
+                </p>
+                <a class="popular-item__btn btn" href="./result.html"
+                  >Подробнее</a
+                >
+              </div>
+            </div>
+            <div class="popular-item">
+              <img
+                class="popular-item__image"
+                src="./assets/images/1.webp"
+                alt="hotel 1"
+              />
+              <div class="popular-item__info">
+                <h3 class="popular-item__title">Отель 1</h3>
+                <p class="popular-item__extra">
+                  8-800-555-3555
+                  <br />
+                  Россия, г. Оренбург, ул. Уличная, д.10
+                  <br />
+                  Начальная стоимость номера: 4000₽
+                  <br />
+                </p>
+                <p class="popular-item__about">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Alias voluptatem nobis deleniti eveniet
+                </p>
+                <a class="popular-item__btn btn" href="./result.html"
+                  >Подробнее</a
+                >
+              </div>
+            </div>
+            <div class="popular-item">
+              <img
+                class="popular-item__image"
+                src="./assets/images/1.webp"
+                alt="hotel 1"
+              />
+              <div class="popular-item__info">
+                <h3 class="popular-item__title">Отель 1</h3>
+                <p class="popular-item__extra">
+                  8-800-555-3555
+                  <br />
+                  Россия, г. Оренбург, ул. Уличная, д.10
+                  <br />
+                  Начальная стоимость номера: 4000₽
+                  <br />
+                </p>
+                <p class="popular-item__about">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Alias voluptatem nobis deleniti eveniet
+                </p>
+                <a class="popular-item__btn btn" href="./result.html"
+                  >Подробнее</a
+                >
+              </div>
+            </div>
+            <div class="popular-item">
+              <img
+                class="popular-item__image"
+                src="./assets/images/1.webp"
+                alt="hotel 1"
+              />
+              <div class="popular-item__info">
+                <h3 class="popular-item__title">Отель 1</h3>
+                <p class="popular-item__extra">
+                  8-800-555-3555
+                  <br />
+                  Россия, г. Оренбург, ул. Уличная, д.10
+                  <br />
+                  Начальная стоимость номера: 4000₽
+                  <br />
+                </p>
+                <p class="popular-item__about">
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                  Alias voluptatem nobis deleniti eveniet
+                </p>
+                <a class="popular-item__btn btn" href="./result.html"
+                  >Подробнее</a
+                >
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <div class="wrapper">
+          <!-- Форма поиска -->
+          <section id="search">
+            <form action="search.php" method="post" class="form">
+              <h2>Поиск</h2>
+              <div class="form__inputBx">
+                <label for="side">Направление/город, страна</label>
+                <input
+                  id="side"
+                  name="side"
+                  class="input"
+                  type="text"
+                  placeholder="г. Оренбург"
+                  required
+                />
+                <div class="form__error">Поле обязательно</div>
+              </div>
+              <div class="form__inputBx">
+                <label for="date">Дата заезда-отъезда</label>
+                <input
+                  id="date"
+                  name="date"
+                  class="input"
+                  type="date"
+                  min="2025-04-07"
+                  required
+                />
+                <div class="form__error">Поле обязательно</div>
+              </div>
+              <div class="form__inputBx">
+                <label for="count">Количество гостей</label>
+                <input
+                  id="count"
+                  name="count"
+                  class="input"
+                  type="number"
+                  placeholder="4"
+                  required
+                />
+                <div class="form__error">Поле обязательно</div>
+              </div>
+              <button class="btn">Поиск</button>
+            </form>
+          </section>
+
+          <!-- Подписка на новости -->
+          <section id="subscribe">
+            <form
+              action="subscribe.php"
+              method="post"
+              class="form subscribe__form"
+            >
+              <h2>Подписка на новости</h2>
+              <div class="form__inputBx">
+                <label for="email">Email</label>
+                <input
+                  id="email"
+                  name="email"
+                  class="input"
+                  type="email"
+                  placeholder="info@example.com"
+                  required
+                />
+                <div class="form__error">Поле обязательно</div>
+              </div>
+              <div class="form__inputBx form__inputBx_checkbox">
+                <div>
+                  <input id="agree" class="input" type="checkbox" required />
+                  <label for="agree"
+                    >Согласие на обработку персональных данных
+                  </label>
+                </div>
+                <div class="form__error">Поле обязательно</div>
+              </div>
+              <button class="btn">Подписаться</button>
+            </form>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer>
+      <div class="container">
+        <div class="footer__logo-container">
+          <img class="footer__logo" src="./assets/images/logo.jpg" alt="logo" />
+        </div>
+
+        <div class="footer__content">
+          <nav class="footer__nav">
+            <h3>Навигация</h3>
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="./index.html">Главная</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="./register.html">Регистрация</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="./login.html">Авторизация</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="./profile.html">Личный кабинет</a>
+              </li>
+              <li class="footer__nav-item">
+                <a class="footer__nav-link" href="./search.html">Поиск</a>
+              </li>
+              <li class="footer__nav-item">
+                <button class="footer__ask-btn btn">Задать вопрос</button>
+              </li>
+            </ul>
+          </nav>
+
+          <div id="menu" class="footer__menu">
+            <h3>Меню</h3>
+            <ul class="footer__menu-list">
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="./clients.html">Клиентам</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="./partners.html"
+                  >Партнерам</a
+                >
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="./about.html">О нас</a>
+              </li>
+              <li class="footer__menu-item">
+                <a class="footer__menu-link" href="./index.html#contact"
+                  >Контакты</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div id="contact" class="footer__contact">
+            <h3>Контакты</h3>
+            <ul class="footer__contact-list">
+              <li class="footer__contact-item">
+                <p>
+                  Телефон:
+                  <a class="footer__contact-link" href="tel:8800777557">
+                    8-800-777-55-77</a
+                  >
+                </p>
+              </li>
+              <li class="footer__contact-item">
+                <p>
+                  Email:
+                  <a class="footer__contact-link" href="mailto:hotel@hotel.ru"
+                    >hotel@hotel.ru</a
+                  >
+                </p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./js/global.js"></script>
+  </body>
+</html>

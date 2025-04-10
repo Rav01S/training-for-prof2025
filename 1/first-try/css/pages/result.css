@@ -1,0 +1,58 @@
+/* Файл css для результата поиска */
+
+/* Секция отеля */
+.hotel-info {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.hotel-info__gallery {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.hotel-info__photo {
+  flex: 1;
+  max-width: calc(33.333% - 10px);
+  border-radius: 12px;
+  height: auto;
+  object-fit: cover;
+  border: 2px solid #6b9cff;
+}
+
+.hotel-info__content {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background: #f8faff;
+  padding: 20px;
+  border-radius: 12px;
+  border: 2px solid #6b9cff;
+}
+
+.hotel-info__title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #2c2c2c;
+}
+
+.hotel-info__type,
+.hotel-info__stars,
+.hotel-info__rating,
+.hotel-info__phone,
+.hotel-info__email,
+.hotel-info__price {
+  font-size: 1rem;
+}
+
+.hotel-info__description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.hotel-info__price {
+  font-weight: bold;
+  color: #3171ff;
+}
