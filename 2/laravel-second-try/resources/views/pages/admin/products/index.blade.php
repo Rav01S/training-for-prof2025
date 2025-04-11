@@ -5,7 +5,7 @@
 
     <x-button
         class="my-4"
-        isLink="true"
+        
         link="{{route('admin.products.create')}}"
     >
         Добавить
@@ -55,10 +55,10 @@
                             <x-form-delete-btn
                                 action="{{route('admin.products.destroy', ['product' => $product])}}"/>
 
-                            <x-button isLink="true"
+                            <x-button 
                                       link="{{route('admin.products.edit', ['product' => $product])}}">Изменить
                             </x-button>
-                            <x-button isLink="true"
+                            <x-button 
                                       link="{{route('admin.products.show', ['product' => $product])}}">Посмотреть
                             </x-button>
                         </td>

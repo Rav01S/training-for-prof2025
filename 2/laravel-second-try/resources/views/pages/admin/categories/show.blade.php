@@ -32,10 +32,10 @@
                         <td class="border-2 border-white px-4 py-2 text-white">
                             <x-form-delete-btn
                                 action="{{route('admin.products.destroy', ['product' => $product])}}"/>
-                            <x-button isLink="true"
+                            <x-button 
                                       link="{{route('admin.products.edit', ['product' => $product])}}">Изменить
                             </x-button>
-                            <x-button isLink="true"
+                            <x-button 
                                       link="{{route('admin.products.show', ['product' => $product])}}">Посмотреть
                             </x-button>
                         </td>

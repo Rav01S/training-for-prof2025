@@ -13,9 +13,7 @@ class input extends Component
      */
     public function __construct(
         public string $name,
-        public ?string $placeholder,
-        public ?string $type = 'text',
-        public ?bool $required = false,
+        public ?string $type = 'text'
     )
     {
         //

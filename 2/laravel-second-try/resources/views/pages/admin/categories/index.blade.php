@@ -5,7 +5,7 @@
 
     <x-button
             class="my-4"
-            isLink="true"
+            
             link="{{route('admin.categories.create')}}"
     >
         Добавить
@@ -49,10 +49,10 @@
                                         action="{{route('admin.categories.destroy', ['category' => $category])}}"/>
                             @endif
 
-                            <x-button isLink="true"
+                            <x-button 
                                       link="{{route('admin.categories.edit', ['category' => $category])}}">Изменить
                             </x-button>
-                            <x-button isLink="true"
+                            <x-button 
                                       link="{{route('admin.categories.show', ['category' => $category])}}">Посмотреть
                             </x-button>
                         </td>

@@ -12,8 +12,7 @@ class button extends Component
      * Create a new component instance.
      */
     public function __construct(
-        public ?string $link,
-        public ?bool $isLink = false
+        public ?string $link
     )
     {
         //

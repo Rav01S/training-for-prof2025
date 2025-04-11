@@ -18,7 +18,6 @@
             type="{{$type}}"
             name="{{$name}}"
             placeholder="{{$label}}"
-            required="{{$required ?? false}}"
             {{$attributes->merge()}}
         />
     @endif

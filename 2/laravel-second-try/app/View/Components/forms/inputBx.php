@@ -16,8 +16,7 @@ class inputBx extends Component
         public string $name,
         public string $label,
         public ?Collection $options,
-        public ?string $type = 'text',
-        public ?bool $required = false,
+        public ?string $type = 'text'
     )
     {
         //
